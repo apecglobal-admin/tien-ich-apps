@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="8" fill="#fff"/>
+  <text x="24" y="22" text-anchor="middle" fill="#c41230" font-size="9" font-weight="bold" font-family="Arial">BIDV</text>
+  <rect x="10" y="28" width="28" height="2" rx="1" fill="#00923f"/>
+</svg>

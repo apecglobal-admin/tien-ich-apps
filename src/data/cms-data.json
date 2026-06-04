@@ -1,0 +1,363 @@
+{
+  "auth": {
+    "password": "admin123",
+    "sessionSecret": "btn-tien-ich-secret-2024",
+    "activeTokens": [
+      "1780549172382-6b63f902c313eae8510e5980032bb3f7.8ee3c46a0a6479eded59d02c21302f9a5d852121a128e9a8cac745fa71e0c620",
+      "1780550005773-7ea37879a5a26e08511e9164a6151dce.3d740efecbff49c3f002c2ac451a5665973aff25cd1c53914e026f5cf4db0b10"
+    ]
+  },
+  "banners": [
+    {
+      "id": "banner-1",
+      "subtitle": "Thanh toán dễ dàng",
+      "title": "ƯU ĐÃI MỖI NGÀY",
+      "buttonText": "Khám phá ngay",
+      "buttonLink": "",
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%)",
+      "image": "",
+      "position": 0
+    },
+    {
+      "id": "banner-2",
+      "subtitle": "Thanh toán dễ dàng",
+      "title": "ƯU ĐÃI MỖI NGÀY",
+      "buttonText": "Khám phá ngay",
+      "buttonLink": "",
+      "gradient": "linear-gradient(135deg, #10b981 0%, #059669 40%, #34d399 100%)",
+      "image": "",
+      "position": 2
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-banks",
+      "title": "Ngân hàng liên kết",
+      "headerLink": "Quản lý",
+      "columns": 3,
+      "showAddButton": true,
+      "order": 1,
+      "items": [
+        {
+          "id": "bank-1",
+          "name": "Vietcombank",
+          "icon": "/icons/banks/vietcombank.svg",
+          "color": "#ffffff",
+          "iconColor": "#9e9e9e",
+          "linkType": "popup",
+          "linkUrl": "",
+          "popupImage": "/uploads/1780549215290-hfdz0s.jpg",
+          "order": 1
+        },
+        {
+          "id": "bank-2",
+          "name": "BIDV",
+          "icon": "/icons/banks/bidv.svg",
+          "color": "#ffffff",
+          "iconColor": "#9e9e9e",
+          "linkType": "url",
+          "linkUrl": "https://tttm.apecbci.com/",
+          "popupImage": "",
+          "order": 2
+        },
+        {
+          "id": "bank-3",
+          "name": "VietinBank",
+          "icon": "/icons/banks/vietinbank.svg",
+          "color": "#ffffff",
+          "iconColor": "",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 3
+        },
+        {
+          "id": "bank-4",
+          "name": "Techcombank",
+          "icon": "/icons/banks/techcombank.svg",
+          "color": "#ffffff",
+          "iconColor": "",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 4
+        },
+        {
+          "id": "bank-5",
+          "name": "MB Bank",
+          "icon": "/icons/banks/mbbank.svg",
+          "color": "#ffffff",
+          "iconColor": "",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 5
+        },
+        {
+          "id": "bank-6",
+          "name": "ACB",
+          "icon": "/icons/banks/acb.svg",
+          "color": "#ffffff",
+          "iconColor": "",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 6
+        },
+        {
+          "id": "bank-7",
+          "name": "TPBank",
+          "icon": "/icons/banks/tpbank.svg",
+          "color": "#ffffff",
+          "iconColor": "",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "section-services",
+      "title": "",
+      "headerLink": "",
+      "columns": 3,
+      "showAddButton": false,
+      "order": 2,
+      "items": [
+        {
+          "id": "svc-1",
+          "name": "Chuyển tiền",
+          "icon": "/icons/3d/transfer.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#43b97f",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 1
+        },
+        {
+          "id": "svc-2",
+          "name": "Thanh toán thẻ",
+          "icon": "/icons/3d/card.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#1a73e8",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 2
+        },
+        {
+          "id": "svc-3",
+          "name": "Tiết kiệm",
+          "icon": "/icons/3d/savings.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#ff9800",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 3
+        },
+        {
+          "id": "svc-4",
+          "name": "Vay online",
+          "icon": "/icons/3d/loan.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#e91e63",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 4
+        },
+        {
+          "id": "svc-5",
+          "name": "Nạp tiền điện thoại",
+          "icon": "/icons/3d/topup.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#3f51b5",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 5
+        },
+        {
+          "id": "svc-6",
+          "name": "Bảo hiểm",
+          "icon": "/icons/3d/insurance.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#00bcd4",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 6
+        },
+        {
+          "id": "svc-7",
+          "name": "Mở thẻ",
+          "icon": "/icons/3d/opencard.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#9c27b0",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 7
+        },
+        {
+          "id": "svc-8",
+          "name": "QR Pay",
+          "icon": "/icons/3d/qrpay.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#ffc107",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 8
+        },
+        {
+          "id": "svc-9",
+          "name": "Xem thêm",
+          "icon": "/icons/3d/more.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#9e9e9e",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "section-bills",
+      "title": "Thanh toán hóa đơn",
+      "headerLink": "Xem tất cả",
+      "columns": 5,
+      "showAddButton": false,
+      "order": 3,
+      "items": [
+        {
+          "id": "bill-1",
+          "name": "Điện",
+          "icon": "/icons/3d/electric.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#ff9800",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 1
+        },
+        {
+          "id": "bill-2",
+          "name": "Nước",
+          "icon": "/icons/3d/water.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#2196f3",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 2
+        },
+        {
+          "id": "bill-3",
+          "name": "Internet",
+          "icon": "/icons/3d/internet.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#e91e63",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 3
+        },
+        {
+          "id": "bill-4",
+          "name": "Truyền hình",
+          "icon": "/icons/3d/tv.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#3f51b5",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 4
+        },
+        {
+          "id": "bill-5",
+          "name": "Chung cư",
+          "icon": "/icons/3d/apartment.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#009688",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 5
+        },
+        {
+          "id": "bill-6",
+          "name": "Khác",
+          "icon": "/icons/3d/more.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#9e9e9e",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "section-other",
+      "title": "Dịch vụ khác",
+      "headerLink": "Xem tất cả",
+      "columns": 4,
+      "showAddButton": false,
+      "order": 4,
+      "items": [
+        {
+          "id": "other-1",
+          "name": "Vé máy bay",
+          "icon": "/icons/3d/flight.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#1a73e8",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 1
+        },
+        {
+          "id": "other-2",
+          "name": "Vé tàu xe",
+          "icon": "/icons/3d/train.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#43b97f",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 2
+        },
+        {
+          "id": "other-3",
+          "name": "Đặt phòng",
+          "icon": "/icons/3d/hotel.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#ff9800",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 3
+        },
+        {
+          "id": "other-4",
+          "name": "Mua sắm",
+          "icon": "/icons/3d/shopping.png",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "iconColor": "#e91e63",
+          "linkType": "url",
+          "linkUrl": "",
+          "popupImage": "",
+          "order": 4
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "backgroundImage": "/uploads/1780551010539-5o19uw.png"
+  }
+}
