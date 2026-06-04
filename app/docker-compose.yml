@@ -14,7 +14,14 @@ services:
       NEXT_TELEMETRY_DISABLED: "1"
       HOSTNAME: 0.0.0.0
       PORT: "3000"
+    volumes:
+      - app-data:/app/src/data
+      - app-uploads:/app/public/uploads
     restart: unless-stopped
     mem_limit: 768m
     memswap_limit: 768m
     cpus: 0.75
+
+volumes:
+  app-data:
+  app-uploads:
