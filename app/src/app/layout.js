@@ -1,8 +1,13 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Tiện Ích',
-  description: 'Ứng dụng ngân hàng số - Thanh toán, chuyển tiền, tiết kiệm và nhiều dịch vụ tài chính tiện ích khác.',
+  title: 'Apec Space',
+  description: 'Cổng tiện ích số hỗ trợ chuyển tiền, thanh toán hóa đơn, liên kết ngân hàng và các dịch vụ tài chính hằng ngày.',
+  icons: {
+    icon: '/favi.png',
+    shortcut: '/favi.png',
+    apple: '/favi.png',
+  },
 };
 
 export default function RootLayout({ children }) {
