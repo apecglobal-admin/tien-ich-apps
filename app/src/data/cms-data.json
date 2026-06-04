@@ -5,7 +5,9 @@
     "activeTokens": [
       "1780549172382-6b63f902c313eae8510e5980032bb3f7.8ee3c46a0a6479eded59d02c21302f9a5d852121a128e9a8cac745fa71e0c620",
       "1780550005773-7ea37879a5a26e08511e9164a6151dce.3d740efecbff49c3f002c2ac451a5665973aff25cd1c53914e026f5cf4db0b10",
-      "1780565280491-9a5e0b7e522f6bd0de9e129b45472982.dd9f14aa759acae9b6f64e97e47fcc8ff0702bf379988ca343a3e59678fbffc2"
+      "1780565280491-9a5e0b7e522f6bd0de9e129b45472982.dd9f14aa759acae9b6f64e97e47fcc8ff0702bf379988ca343a3e59678fbffc2",
+      "1780567120868-bf2eb739ae1540294fc2ae594d84aa3f.d2c421bc5e7065b622bf9c382af4464b2e69203ede0f6fe07e9347d723b8addd",
+      "1780567169025-43bde29e84ed1c36294f8c4c753fd912.263b1072d2fb629857cf4f203d449a104a5ebd1ca30016cb34ed1666fe1ee70f"
     ]
   },
   "banners": [
@@ -16,7 +18,7 @@
       "buttonText": "Khám phá ngay",
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%)",
-      "image": "",
+      "image": "/uploads/1780567130674-0y4mss.png",
       "position": 0
     },
     {
