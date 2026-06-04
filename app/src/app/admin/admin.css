@@ -379,6 +379,10 @@
   color: white;
   font-size: 11px;
   max-width: 200px;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-preview__title {

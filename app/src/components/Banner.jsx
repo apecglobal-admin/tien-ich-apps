@@ -4,6 +4,7 @@ export default function Banner({ banner }) {
   const style = {
     background: banner.gradient || 'var(--gradient-banner)',
   };
+  const className = `banner animate-in${banner.image ? ' banner--has-image' : ''}`;
 
   function handleClick() {
     if (banner.buttonLink) {
@@ -12,7 +13,14 @@ export default function Banner({ banner }) {
   }
 
   return (
-    <div className="banner animate-in" style={style} onClick={handleClick}>
+    <div className={className} style={style} onClick={handleClick}>
+      {banner.image && (
+        <>
+          <img className="banner__image" src={banner.image} alt={banner.title} />
+          <div className="banner__image-overlay" />
+        </>
+      )}
+
       <div className="banner__decoration" />
       <div className="banner__decoration banner__decoration--sm" />
 
@@ -29,21 +37,6 @@ export default function Banner({ banner }) {
         </span>
       )}
 
-      {banner.image && (
-        <img
-          src={banner.image}
-          alt={banner.title}
-          style={{
-            position: 'absolute',
-            right: 16,
-            bottom: 16,
-            maxHeight: 80,
-            maxWidth: 100,
-            objectFit: 'contain',
-            opacity: 0.9,
-          }}
-        />
-      )}
     </div>
   );
 }

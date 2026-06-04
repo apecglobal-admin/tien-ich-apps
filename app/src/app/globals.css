@@ -118,7 +118,7 @@ button {
   background: var(--gradient-banner);
   position: relative;
   overflow: hidden;
-  min-height: 120px;
+  aspect-ratio: 2 / 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +128,22 @@ button {
 
 .banner:active {
   transform: scale(0.98);
+}
+
+.banner__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.banner__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.56) 0%, rgba(15, 23, 42, 0.22) 58%, rgba(15, 23, 42, 0.08) 100%);
+  z-index: 1;
 }
 
 /* ========== Popup Overlay ========== */
@@ -202,6 +218,8 @@ button {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: var(--space-xs);
   font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
 
 .banner__title {
@@ -212,6 +230,8 @@ button {
   margin-bottom: var(--space-md);
   text-transform: uppercase;
   line-height: 1.2;
+  position: relative;
+  z-index: 2;
 }
 
 .banner__btn {
@@ -227,6 +247,8 @@ button {
   backdrop-filter: blur(4px);
   width: fit-content;
   transition: background 0.2s;
+  position: relative;
+  z-index: 2;
 }
 
 .banner__btn:hover {
@@ -246,6 +268,7 @@ button {
   height: 120px;
   border-radius: var(--radius-full);
   background: rgba(255, 255, 255, 0.08);
+  z-index: 1;
 }
 
 .banner__decoration--sm {
