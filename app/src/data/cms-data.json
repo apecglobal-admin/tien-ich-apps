@@ -30,7 +30,8 @@
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #10b981 0%, #059669 40%, #34d399 100%)",
       "image": "/uploads/1780633515120-n14py0.png",
-      "position": 1
+      "position": 1,
+      "aspectRatio": "2 / 0.5"
     }
   ],
   "sections": [
