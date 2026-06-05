@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { readData, writeData, generateId } from '@/lib/db';
+import { normalizeBannerAspectRatio } from '@/lib/bannerUtils.mjs';
 
 export async function GET() {
   const data = readData();
@@ -19,6 +20,7 @@ export async function POST(request) {
     gradient: body.gradient || 'linear-gradient(135deg, #43b97f 0%, #2d9a6a 40%, #4ec08d 100%)',
     image: body.image || '',
     position: body.position !== undefined ? body.position : 0,
+    aspectRatio: normalizeBannerAspectRatio(body.aspectRatio),
   };
 
   data.banners = [...(data.banners || []), newBanner];
@@ -32,7 +34,7 @@ export async function PUT(request) {
   const data = readData();
 
   data.banners = (data.banners || []).map((b) =>
-    b.id === body.id ? { ...b, ...body } : b
+    b.id === body.id ? { ...b, ...body, aspectRatio: normalizeBannerAspectRatio(body.aspectRatio) } : b
   );
   writeData(data);
 

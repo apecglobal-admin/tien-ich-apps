@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { BANNER_ASPECT_RATIO_OPTIONS, DEFAULT_BANNER_ASPECT_RATIO, normalizeBannerAspectRatio } from '@/lib/bannerUtils.mjs';
 
 export default function BannerManager() {
   const [banners, setBanners] = useState([]);
@@ -17,6 +18,7 @@ export default function BannerManager() {
     gradient: 'linear-gradient(135deg, #43b97f 0%, #2d9a6a 40%, #4ec08d 100%)',
     image: '',
     position: 0,
+    aspectRatio: DEFAULT_BANNER_ASPECT_RATIO,
   });
 
   useEffect(() => {
@@ -42,7 +44,7 @@ export default function BannerManager() {
     setForm({
       subtitle: '', title: '', buttonText: '', buttonLink: '',
       gradient: 'linear-gradient(135deg, #43b97f 0%, #2d9a6a 40%, #4ec08d 100%)',
-      image: '', position: 0,
+      image: '', position: 0, aspectRatio: DEFAULT_BANNER_ASPECT_RATIO,
     });
     setEditItem(null);
     setShowForm(false);
@@ -50,10 +52,11 @@ export default function BannerManager() {
 
   function startEdit(banner) {
     setForm({
-      subtitle: banner.subtitle, title: banner.title,
-      buttonText: banner.buttonText, buttonLink: banner.buttonLink || '',
-      gradient: banner.gradient, image: banner.image || '',
+      subtitle: banner.subtitle || '', title: banner.title || '',
+      buttonText: banner.buttonText || '', buttonLink: banner.buttonLink || '',
+      gradient: banner.gradient || '', image: banner.image || '',
       position: banner.position || 0,
+      aspectRatio: normalizeBannerAspectRatio(banner.aspectRatio),
     });
     setEditItem(banner);
     setShowForm(true);
@@ -71,20 +74,20 @@ export default function BannerManager() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    if (!form.title) return;
+    const payload = { ...form, aspectRatio: normalizeBannerAspectRatio(form.aspectRatio) };
 
     if (editItem) {
       await fetch('/api/banners', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, id: editItem.id }),
+        body: JSON.stringify({ ...payload, id: editItem.id }),
       });
       showToast('✓ Cập nhật banner thành công!');
     } else {
       await fetch('/api/banners', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify(payload),
       });
       showToast('✓ Thêm banner thành công!');
     }
@@ -142,8 +145,8 @@ export default function BannerManager() {
               {banners.map((banner) => (
                 <tr key={banner.id}>
                   <td>
-                    <div className="banner-preview" style={{ background: banner.gradient }}>
-                      <div className="banner-preview__title">{banner.title}</div>
+                    <div className="banner-preview" style={{ background: banner.gradient || 'linear-gradient(135deg, #43b97f, #2d9a6a)', aspectRatio: normalizeBannerAspectRatio(banner.aspectRatio) }}>
+                      <div className="banner-preview__title">{banner.title?.trim() || 'Banner'}</div>
                     </div>
                   </td>
                   <td>{banner.title}</td>
@@ -174,8 +177,8 @@ export default function BannerManager() {
 
             <form onSubmit={handleSubmit} className="admin-form">
               <div className="form-group">
-                <label>Tiêu đề chính *</label>
-                <input type="text" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} placeholder="VD: ƯU ĐÃI MỖI NGÀY" required />
+                <label>Tiêu đề chính</label>
+                <input type="text" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} placeholder="VD: ƯU ĐÃI MỖI NGÀY" />
               </div>
 
               <div className="form-group">
@@ -203,6 +206,15 @@ export default function BannerManager() {
                     </option>
                   ))}
                   <option value={sortedSections.length + 1}>Cuối trang</option>
+                </select>
+              </div>
+
+              <div className="form-group">
+                <label>Tỷ lệ banner</label>
+                <select value={form.aspectRatio} onChange={(e) => setForm({ ...form, aspectRatio: e.target.value })}>
+                  {BANNER_ASPECT_RATIO_OPTIONS.map((option) => (
+                    <option key={option.value} value={option.value}>{option.label}</option>
+                  ))}
                 </select>
               </div>
 

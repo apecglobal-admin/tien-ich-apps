@@ -12,7 +12,8 @@
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #43b97f 0%, #2d9a6a 40%, #4ec08d 100%)",
       "image": "",
-      "position": 0
+      "position": 0,
+      "aspectRatio": "2 / 1"
     },
     {
       "id": "banner-2",
@@ -22,7 +23,8 @@
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #5bbf8e 0%, #3aaa75 40%, #6ccf9e 100%)",
       "image": "",
-      "position": 2
+      "position": 2,
+      "aspectRatio": "2 / 1"
     }
   ],
   "sections": [
