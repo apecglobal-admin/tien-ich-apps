@@ -122,11 +122,15 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
+  cursor: default;
   transition: transform 0.2s ease;
 }
 
-.banner:active {
+.banner--clickable {
+  cursor: pointer;
+}
+
+.banner--clickable:active {
   transform: scale(0.98);
 }
 

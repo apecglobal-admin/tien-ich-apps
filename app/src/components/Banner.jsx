@@ -1,36 +1,51 @@
 'use client';
 
+import { getBannerViewModel } from '@/lib/bannerUtils.mjs';
+
 export default function Banner({ banner }) {
+  const viewModel = getBannerViewModel(banner);
   const style = {
-    background: banner.gradient || 'var(--gradient-banner)',
+    background: viewModel.gradient,
+    aspectRatio: viewModel.aspectRatio,
   };
-  const className = `banner animate-in${banner.image ? ' banner--has-image' : ''}`;
+  const className = [
+    'banner',
+    'animate-in',
+    viewModel.image ? 'banner--has-image' : '',
+    viewModel.buttonLink ? 'banner--clickable' : '',
+  ].filter(Boolean).join(' ');
 
   function handleClick() {
-    if (banner.buttonLink) {
-      window.open(banner.buttonLink, '_self');
+    if (viewModel.buttonLink) {
+      window.open(viewModel.buttonLink, '_self');
     }
   }
 
   return (
     <div className={className} style={style} onClick={handleClick}>
-      {banner.image && (
+      {viewModel.image && (
         <>
-          <img className="banner__image" src={banner.image} alt={banner.title} />
-          <div className="banner__image-overlay" />
+          <img className="banner__image" src={viewModel.image} alt={viewModel.title || viewModel.subtitle} />
+          {viewModel.showImageOverlay && <div className="banner__image-overlay" />}
         </>
       )}
 
-      <div className="banner__decoration" />
-      <div className="banner__decoration banner__decoration--sm" />
-
-      {banner.subtitle && (
-        <span className="banner__subtitle">{banner.subtitle}</span>
+      {viewModel.hasContent && (
+        <>
+          <div className="banner__decoration" />
+          <div className="banner__decoration banner__decoration--sm" />
+        </>
       )}
-      <h2 className="banner__title">{banner.title}</h2>
-      {banner.buttonText && (
+
+      {viewModel.subtitle && (
+        <span className="banner__subtitle">{viewModel.subtitle}</span>
+      )}
+      {viewModel.title && (
+        <h2 className="banner__title">{viewModel.title}</h2>
+      )}
+      {viewModel.hasButton && (
         <span className="banner__btn">
-          {banner.buttonText}
+          {viewModel.buttonText}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M9 18l6-6-6-6" />
           </svg>
