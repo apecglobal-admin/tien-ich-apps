@@ -23,19 +23,19 @@
     },
     {
       "id": "banner-2",
-      "subtitle": "Thanh toán dễ dàng",
-      "title": "ƯU ĐÃI MỖI NGÀY",
-      "buttonText": "Khám phá ngay",
+      "subtitle": "",
+      "title": " ",
+      "buttonText": "",
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #10b981 0%, #059669 40%, #34d399 100%)",
-      "image": "/uploads/1780633132812-7mbzrf.png",
+      "image": "/uploads/1780633515120-n14py0.png",
       "position": 1
     }
   ],
   "sections": [
     {
       "id": "section-banks",
-      "title": "Ngân Hàng Hợp Tác",
+      "title": "",
       "headerLink": "",
       "columns": 3,
       "showAddButton": false,
