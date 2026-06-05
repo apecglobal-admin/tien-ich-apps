@@ -8,7 +8,9 @@
       "1780565280491-9a5e0b7e522f6bd0de9e129b45472982.dd9f14aa759acae9b6f64e97e47fcc8ff0702bf379988ca343a3e59678fbffc2",
       "1780626838769-69d4bef29b72ce531a8b036cdce92b97.d207b5ba0920369ab43383f43020e57f501bd4c1c7ac5b2a745d777f0e104822",
       "1780627912646-b0782080e4bd34f72587775516ebe348.2f26ffc5630b2dad0dc4ae0fa8acaaa4c1699748576f97859af37890540c4411",
-      "1780633273878-d9fff1c477ba03c83d8247ef74609fb7.d0652c81880ece1b9c15eed8eded1a9f4e7aed417f9198bdc0c54d3df88a6a24"
+      "1780633273878-d9fff1c477ba03c83d8247ef74609fb7.d0652c81880ece1b9c15eed8eded1a9f4e7aed417f9198bdc0c54d3df88a6a24",
+      "1780638534822-3ffa361c4139367f45dc98447f17d617.02c98909dc290ba8f68553443c3c5bf6d574b449ffb7adfff5a3e9df73e0e738",
+      "1780638606087-d4d7503c2aad372a26d4f7380d1f7ce0.937548a0ccc0910bbc08e367c12918f755b6bb12c1ffbd751bc1197dfbb82915"
     ]
   },
   "banners": [
@@ -19,8 +21,9 @@
       "buttonText": " ",
       "buttonLink": "",
       "gradient": "",
-      "image": "/uploads/1780567130674-0y4mss.png",
-      "position": 0
+      "image": "/uploads/1780638730925-w3jo18.png",
+      "position": 0,
+      "aspectRatio": "2 / 0.5"
     },
     {
       "id": "banner-2",
@@ -29,7 +32,7 @@
       "buttonText": "",
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #10b981 0%, #059669 40%, #34d399 100%)",
-      "image": "/uploads/1780633515120-n14py0.png",
+      "image": "/uploads/1780639882824-ygzhv3.png",
       "position": 1,
       "aspectRatio": "2 / 0.5"
     }
@@ -48,9 +51,9 @@
           "name": "TNEX",
           "icon": "/uploads/1780633306230-se7tz5.jpg",
           "color": "#ffffff",
-          "iconColor": "#ffffff",
+          "iconColor": "#ff0000",
           "linkType": "url",
-          "linkUrl": "",
+          "linkUrl": "https://xomi.xfuture.vn/form/p10784m7p74xm4m07p61xmp1?utm_id=APEC&lng=vi",
           "popupImage": "/uploads/1780549215290-hfdz0s.jpg",
           "order": 1
         },
@@ -72,7 +75,7 @@
           "color": "#ffffff",
           "iconColor": "#ffffff",
           "linkType": "url",
-          "linkUrl": "",
+          "linkUrl": "https://sieuthe.apecbci.com/",
           "popupImage": "",
           "order": 3
         }
@@ -83,8 +86,8 @@
     },
     {
       "id": "section-services",
-      "title": "",
-      "headerLink": "",
+      "title": " ",
+      "headerLink": "Coming soon",
       "columns": 5,
       "showAddButton": false,
       "order": 2,
@@ -166,12 +169,15 @@
           "popupImage": "",
           "order": 8
         }
-      ]
+      ],
+      "headerLinkType": "popup",
+      "headerLinkUrl": "",
+      "headerPopupImage": "/uploads/1780640067725-s3pv0w.png"
     },
     {
       "id": "section-bills",
       "title": "Thanh toán hóa đơn",
-      "headerLink": "Thông tin",
+      "headerLink": "Coming soon",
       "columns": 5,
       "showAddButton": false,
       "order": 3,
@@ -239,7 +245,7 @@
     {
       "id": "section-other",
       "title": "Dịch vụ khác",
-      "headerLink": "Xem tất cả",
+      "headerLink": "Coming soon",
       "columns": 5,
       "showAddButton": false,
       "order": 4,
@@ -289,9 +295,9 @@
           "order": 4
         }
       ],
-      "headerLinkType": "none",
+      "headerLinkType": "popup",
       "headerLinkUrl": "",
-      "headerPopupImage": ""
+      "headerPopupImage": "/uploads/1780640088664-7b8re2.png"
     }
   ],
   "settings": {
