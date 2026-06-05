@@ -6,18 +6,18 @@
       "1780549172382-6b63f902c313eae8510e5980032bb3f7.8ee3c46a0a6479eded59d02c21302f9a5d852121a128e9a8cac745fa71e0c620",
       "1780550005773-7ea37879a5a26e08511e9164a6151dce.3d740efecbff49c3f002c2ac451a5665973aff25cd1c53914e026f5cf4db0b10",
       "1780565280491-9a5e0b7e522f6bd0de9e129b45472982.dd9f14aa759acae9b6f64e97e47fcc8ff0702bf379988ca343a3e59678fbffc2",
-      "1780567120868-bf2eb739ae1540294fc2ae594d84aa3f.d2c421bc5e7065b622bf9c382af4464b2e69203ede0f6fe07e9347d723b8addd",
-      "1780567169025-43bde29e84ed1c36294f8c4c753fd912.263b1072d2fb629857cf4f203d449a104a5ebd1ca30016cb34ed1666fe1ee70f"
+      "1780626838769-69d4bef29b72ce531a8b036cdce92b97.d207b5ba0920369ab43383f43020e57f501bd4c1c7ac5b2a745d777f0e104822",
+      "1780627912646-b0782080e4bd34f72587775516ebe348.2f26ffc5630b2dad0dc4ae0fa8acaaa4c1699748576f97859af37890540c4411"
     ]
   },
   "banners": [
     {
       "id": "banner-1",
-      "subtitle": "Thanh toán dễ dàng",
-      "title": "ƯU ĐÃI MỖI NGÀY",
-      "buttonText": "Khám phá ngay",
+      "subtitle": " ",
+      "title": " ",
+      "buttonText": " ",
       "buttonLink": "",
-      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%)",
+      "gradient": "",
       "image": "/uploads/1780567130674-0y4mss.png",
       "position": 0
     },
@@ -28,8 +28,8 @@
       "buttonText": "Khám phá ngay",
       "buttonLink": "",
       "gradient": "linear-gradient(135deg, #10b981 0%, #059669 40%, #34d399 100%)",
-      "image": "",
-      "position": 2
+      "image": "/uploads/1780628001820-52sx1a.jpg",
+      "position": 1
     }
   ],
   "sections": [
@@ -38,7 +38,7 @@
       "title": "Ngân hàng liên kết",
       "headerLink": "Quản lý",
       "columns": 3,
-      "showAddButton": true,
+      "showAddButton": false,
       "order": 1,
       "items": [
         {
@@ -73,52 +73,11 @@
           "linkUrl": "",
           "popupImage": "",
           "order": 3
-        },
-        {
-          "id": "bank-4",
-          "name": "Techcombank",
-          "icon": "/icons/banks/techcombank.svg",
-          "color": "#ffffff",
-          "iconColor": "",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 4
-        },
-        {
-          "id": "bank-5",
-          "name": "MB Bank",
-          "icon": "/icons/banks/mbbank.svg",
-          "color": "#ffffff",
-          "iconColor": "",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 5
-        },
-        {
-          "id": "bank-6",
-          "name": "ACB",
-          "icon": "/icons/banks/acb.svg",
-          "color": "#ffffff",
-          "iconColor": "",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 6
-        },
-        {
-          "id": "bank-7",
-          "name": "TPBank",
-          "icon": "/icons/banks/tpbank.svg",
-          "color": "#ffffff",
-          "iconColor": "",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 7
         }
-      ]
+      ],
+      "headerLinkType": "none",
+      "headerLinkUrl": "",
+      "headerPopupImage": ""
     },
     {
       "id": "section-services",
