@@ -2,15 +2,18 @@
 
 import { useState } from 'react';
 import IconPopup from './IconPopup';
+import { useQueryParams } from '@/lib/useQueryParams';
 
 export default function Section({ section }) {
   const [popupImage, setPopupImage] = useState(null);
+  const { buildUrl } = useQueryParams();
   const columns = section?.columns || 3;
   const items = (section?.items || []).sort((a, b) => a.order - b.order);
 
   function handleItemClick(item) {
     if (item.linkType === 'url' && item.linkUrl) {
-      window.open(item.linkUrl, '_self');
+      const urlWithParams = buildUrl(item.linkUrl);
+      window.open(urlWithParams, '_self');
     } else if (item.linkType === 'popup' && item.popupImage) {
       setPopupImage(item.popupImage);
     }
@@ -24,7 +27,8 @@ export default function Section({ section }) {
     
     if (section.headerLinkType === 'url' && section.headerLinkUrl) {
       e.preventDefault();
-      window.open(section.headerLinkUrl, '_self');
+      const urlWithParams = buildUrl(section.headerLinkUrl);
+      window.open(urlWithParams, '_self');
     } else if (section.headerLinkType === 'popup' && section.headerPopupImage) {
       e.preventDefault();
       setPopupImage(section.headerPopupImage);

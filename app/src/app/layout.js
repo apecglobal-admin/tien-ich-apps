@@ -1,4 +1,5 @@
 import './globals.css';
+import QueryParamsCapture from '@/components/QueryParamsCapture';
 
 export const metadata = {
   title: 'Apec Space',
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="vi">
-      <body>{children}</body>
+      <body>
+        <QueryParamsCapture />
+        {children}
+      </body>
     </html>
   );
 }
