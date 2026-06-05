@@ -84,7 +84,7 @@
       "id": "section-services",
       "title": "",
       "headerLink": "",
-      "columns": 3,
+      "columns": 5,
       "showAddButton": false,
       "order": 2,
       "items": [
@@ -109,17 +109,6 @@
           "linkUrl": "",
           "popupImage": "",
           "order": 2
-        },
-        {
-          "id": "svc-3",
-          "name": "Tiết kiệm",
-          "icon": "/icons/3d/savings.png",
-          "color": "rgba(255, 255, 255, 0.7)",
-          "iconColor": "#ff9800",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 3
         },
         {
           "id": "svc-4",
@@ -175,24 +164,13 @@
           "linkUrl": "",
           "popupImage": "",
           "order": 8
-        },
-        {
-          "id": "svc-9",
-          "name": "Xem thêm",
-          "icon": "/icons/3d/more.png",
-          "color": "rgba(255, 255, 255, 0.7)",
-          "iconColor": "#9e9e9e",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 9
         }
       ]
     },
     {
       "id": "section-bills",
       "title": "Thanh toán hóa đơn",
-      "headerLink": "Xem tất cả",
+      "headerLink": "Thông tin",
       "columns": 5,
       "showAddButton": false,
       "order": 3,
@@ -251,25 +229,17 @@
           "linkUrl": "",
           "popupImage": "",
           "order": 5
-        },
-        {
-          "id": "bill-6",
-          "name": "Khác",
-          "icon": "/icons/3d/more.png",
-          "color": "rgba(255, 255, 255, 0.7)",
-          "iconColor": "#9e9e9e",
-          "linkType": "url",
-          "linkUrl": "",
-          "popupImage": "",
-          "order": 6
         }
-      ]
+      ],
+      "headerLinkType": "popup",
+      "headerLinkUrl": "",
+      "headerPopupImage": "/uploads/1780633886495-oa1o98.png"
     },
     {
       "id": "section-other",
       "title": "Dịch vụ khác",
       "headerLink": "Xem tất cả",
-      "columns": 4,
+      "columns": 5,
       "showAddButton": false,
       "order": 4,
       "items": [
@@ -317,7 +287,10 @@
           "popupImage": "",
           "order": 4
         }
-      ]
+      ],
+      "headerLinkType": "none",
+      "headerLinkUrl": "",
+      "headerPopupImage": ""
     }
   ],
   "settings": {
