@@ -14,6 +14,8 @@ services:
       NEXT_TELEMETRY_DISABLED: "1"
       HOSTNAME: 0.0.0.0
       PORT: "3030"
+      # Ensure data directories exist with write permissions
+      DATA_DIR: /app/src/data
     volumes:
       - ./src/data:/app/src/data
       - ./public/uploads:/app/public/uploads
